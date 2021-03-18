@@ -8,19 +8,20 @@
             width: 800px;
             height: 500px;
             margin: 0 auto;
+            border: 4px orange solid;
         }
 
         .father-2 {
             width: 800px;
             height: 500px;
-            background: lightblue;
+            border: 4px blue solid;
             margin: 0 auto;
         }
 
         .father-3 {
             width: 800px;
             height: 500px;
-            background: greenyellow;
+            border: 4px darkgreen solid;
             margin: 0 auto;
         }
 
@@ -48,7 +49,13 @@
         .flex {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+        }
+
+        .rectangle-B2 {
+            width: 600px;
+            height: 150px;
+            box-sizing: border-box;
+            background: aqua;
         }
     </style>
 
@@ -61,7 +68,11 @@
     <div class="rectangle-C"></div>
 </div>
 
-<div class="father-2"></div>
+<div class="father-2 flex">
+    <div class="rectangle-A"></div>
+    <div class="rectangle-B2"></div>
+    <div class="rectangle-C"></div>
+</div>
 
 <div class="father-3"></div>
 
