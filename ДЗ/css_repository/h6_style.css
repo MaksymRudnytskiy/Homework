@@ -61,5 +61,5 @@
 
 .aside {
     border: cyan solid;
-    box-sizing: unset;
+    box-sizing: border-box;
 }
