@@ -20,6 +20,7 @@
 
 .son {
     display: flex;
+
 }
 
 .article {
@@ -46,7 +47,8 @@
 }
 
 .bottom {
-
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .selection {
