@@ -151,3 +151,51 @@ console.log(sn);
 alert(nm + ' ' + pn + ' ' + sn);
 
 document.write(nm + ' ' + pn + ' ' + sn);
+
+//Part_2
+
+//- Взять переменные из задания 4 и сконкатенировать их в одной переменной person.
+
+let person = `${nm} ${pn} ${sn}`
+
+//- Взять задние 4 и 5 и применить его к ФИО всех членов своей семьи.
+
+let motherNm = prompt("Submit your mother's name");
+let motherPn = prompt("Submit your mother's patronym");
+let motherSn = prompt("Submit your mother's surname");
+
+let fatherNm = prompt("Submit your father's name");
+let fatherPn = prompt("Submit your father's patronym");
+let fatherSn = prompt("Submit your father's surname");
+
+let brotherNm = prompt("Submit your brother's name");
+let brotherPn = prompt("Submit your brother's patronym");
+let brotherSn = prompt("Submit your brother's surname");
+
+console.log(motherNm + ' ' + motherPn + ' ' + motherSn);
+console.log(fatherNm + ' ' + fatherPn + ' ' + fatherSn);
+console.log(brotherNm + ' ' + brotherPn + ' ' + brotherSn);
+
+alert(motherNm + ' ' + motherPn + ' ' + motherSn);
+alert(fatherNm + ' ' + fatherPn + ' ' + fatherSn);
+alert(brotherNm + ' ' + brotherPn + ' ' + brotherSn);
+
+document.write(motherNm + ' ' + motherPn + ' ' + motherSn);
+document.write(fatherNm + ' ' + fatherPn + ' ' + fatherSn);
+document.write(brotherNm + ' ' + brotherPn + ' ' + brotherSn);
+
+let mother = `${motherNm} ${motherPn} ${motherSn}`;
+let father = `${fatherNm} ${fatherPn} ${fatherSn}`;
+let brother = `${brotherNm} ${brotherPn} ${brotherSn}`;
+
+//- при помощи prompt() получить 3 числа. Привести их к числовому типу при помощи +. вывести их в консоль.
+
+let num1 = +prompt('Number 1');
+let num2 = +prompt('Number 2');
+let num3 = +prompt('Number 3');
+
+console.log(num1, num2, num3);
+
+
+
+
