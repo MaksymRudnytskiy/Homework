@@ -196,6 +196,20 @@ let num3 = +prompt('Number 3');
 
 console.log(num1, num2, num3);
 
+//- при помощи prompt() получить 4 числа. Привести их к числовому типу при помощи parseInt. Сложить их между собой записав результат в переменную result и вывести в консоль браузера
 
+let num4 = prompt('Number 4');
+let num5 = prompt('Number 5');
+let num6 = prompt('Number 6');
+let num7 = prompt('Number 7');
 
+let parNum4 = parseInt(num4);
+let parNum5 = parseInt(num5);
+let parNum6 = parseInt(num6);
+let parNum7 = parseInt(num7);
+
+console.log(parNum4)
+console.log(parNum5)
+console.log(parNum6)
+console.log(parNum7)
 
