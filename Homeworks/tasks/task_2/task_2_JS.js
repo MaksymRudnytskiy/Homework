@@ -79,4 +79,11 @@ while (k < 10) {
     k++
 }
 
+//- Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+
+let cycle_3 = [3, 90, 48, 24, 'Anna', 'Max', 'Sophia', 'Vova', true, false];
+
+for (let l = 0; l < cycle_3.length; l++) {
+    console.log(cycle_3[l]);
+}
 
