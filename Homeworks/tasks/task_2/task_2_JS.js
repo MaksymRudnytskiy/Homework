@@ -12,13 +12,24 @@ console.log(block2);
 const block3 = ['computer', 'chair', 56, true, 9];
 console.log(block3);
 
+//-- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу. Вивести в консоль
 
+let emptyBlock = [];
 
+emptyBlock[3] = 11;
+console.log(emptyBlock);
 
+emptyBlock[0] = 'max';
+console.log(emptyBlock);
 
+emptyBlock[4] = true;
+console.log(emptyBlock);
 
+emptyBlock[1] = 'table';
+console.log(emptyBlock);
 
-
+emptyBlock[2] = 946;
+console.log(emptyBlock)
 
 
 
