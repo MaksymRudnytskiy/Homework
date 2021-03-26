@@ -60,9 +60,9 @@
 //}
 //
 //Part_2
-
+//
 //- Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
-
+//
 //let cycle_1 = [3, 90, 48, 24, 5, 17, 999, 123, 879, 1247];
 //
 //for (let i = 0; i < cycle_1.length; i++) {
@@ -90,33 +90,45 @@
 //- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
 //- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
 //- Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
+//
+//let mass_1 = [999, 123, true, 879, 1247, 'Veronika', 'Alina', false, 'Maria', 'Anna'];
+//
+//for (let i = 0; i < mass_1.length; i++) {
+//    if (typeof (mass_1[i]) === "boolean") {
+//        console.log(mass_1[i])
+//    }
+//}
+//
+//for (let i = 0; i < mass_1.length; i++) {
+//    if (typeof (mass_1[i]) === "number") {
+//        console.log(mass_1[i])
+//    }
+//}
+//
+//for (let i = 0; i < mass_1.length; i++) {
+//    if (typeof (mass_1[i]) === "string") {
+//        console.log(mass_1[i])
+//    }
+//}
+//
+//- Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
 
-let mass_1 = [999, 123, true, 879, 1247, 'Veronika', 'Alina', false, 'Maria', 'Anna'];
+let empty_2 = [];
 
-for (let i = 0; i < mass_1.length; i++) {
-    if (typeof (mass_1[i]) === "boolean") {
-        console.log(mass_1[i])
-    }
+empty_2[3] = 11;
+empty_2[0] = 'Max';
+empty_2[4] = true;
+empty_2[1] = 'table';
+empty_2[2] = 946;
+empty_2[9] = 111;
+empty_2[5] = 'Alina';
+empty_2[8] = false;
+empty_2[6] = 'TV';
+empty_2[7] = 1865;
+
+for (let l = 0; l < empty_2.length; l++) {
+    console.log(empty_2[l])
 }
-
-for (let i = 0; i<mass_1.length; i++) {
-    if (typeof (mass_1[i]) === "number") {
-        console.log(mass_1[i])
-    }
-}
-
-for (let i = 0; i<mass_1.length; i++) {
-    if (typeof (mass_1[i]) === "string") {
-        console.log(mass_1[i])
-    }
-}
-
-
-
-
-
-
-
 
 
 
