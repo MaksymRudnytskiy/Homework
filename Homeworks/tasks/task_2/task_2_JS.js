@@ -130,6 +130,7 @@ for (let l = 0; l < empty_2.length; l++) {
     console.log(empty_2[l])
 }
 
+//- Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 
 
 
