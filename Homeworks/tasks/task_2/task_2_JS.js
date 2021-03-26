@@ -43,7 +43,13 @@ for (let i = 0; i < 10; i++) {
     document.write(`<div>${i} ${'indexTest'}</div>`)
 }
 
+//- За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 
+let k = 0;
+while (k<20) {
+    document.write('<h1>whileTest</h1>');
+    k++
+}
 
 
 
