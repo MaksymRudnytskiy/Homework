@@ -31,9 +31,11 @@ console.log(emptyBlock);
 emptyBlock[2] = 946;
 console.log(emptyBlock)
 
+//- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
 
-
-
+for (let i = 0; i < 10; i++) {
+   document.write('<div>lorem</div>')
+}
 
 
 
