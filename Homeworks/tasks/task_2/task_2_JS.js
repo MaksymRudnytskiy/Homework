@@ -63,27 +63,76 @@
 
 //- Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
 
-let cycle_1 = [3, 90, 48, 24, 5, 17, 999, 123, 879, 1247];
+//let cycle_1 = [3, 90, 48, 24, 5, 17, 999, 123, 879, 1247];
+//
+//for (let i = 0; i < cycle_1.length; i++) {
+//    console.log(cycle_1[i]);
+//}
+//
+////- Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
+//
+//let cycle_2 = ['Anna', 'Max', 'Sophia', 'Vova', 'Sasha', 'Ivan', 'Paul', 'Veronika', 'Alina', 'Maria'];
+//
+//let k = 0;
+//while (k < 10) {
+//    console.log(cycle_2[k]);
+//    k++
+//}
+//
+////- Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+//
+//let cycle_3 = [3, 90, 48, 24, 'Anna', 'Max', 'Sophia', 'Vova', true, false];
+//
+//for (let l = 0; l < cycle_3.length; l++) {
+//    console.log(cycle_3[l]);
+//}
+//
+//- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
+//- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
+//- Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
 
-for (let i = 0; i < cycle_1.length; i++) {
-    console.log(cycle_1[i]);
+let mass_1 = [999, 123, true, 879, 1247, 'Veronika', 'Alina', false, 'Maria', 'Anna'];
+
+for (let i = 0; i < mass_1.length; i++) {
+    if (typeof (mass_1[i]) === "boolean") {
+        console.log(mass_1[i])
+    }
 }
 
-//- Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
-
-let cycle_2 = ['Anna', 'Max', 'Sophia', 'Vova', 'Sasha', 'Ivan', 'Paul', 'Veronika', 'Alina', 'Maria'];
-
-let k = 0;
-while (k < 10) {
-    console.log(cycle_2[k]);
-    k++
+for (let i = 0; i<mass_1.length; i++) {
+    if (typeof (mass_1[i]) === "number") {
+        console.log(mass_1[i])
+    }
 }
 
-//- Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
-
-let cycle_3 = [3, 90, 48, 24, 'Anna', 'Max', 'Sophia', 'Vova', true, false];
-
-for (let l = 0; l < cycle_3.length; l++) {
-    console.log(cycle_3[l]);
+for (let i = 0; i<mass_1.length; i++) {
+    if (typeof (mass_1[i]) === "string") {
+        console.log(mass_1[i])
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
