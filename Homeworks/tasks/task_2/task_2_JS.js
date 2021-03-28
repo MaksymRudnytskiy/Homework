@@ -112,40 +112,45 @@
 //}
 //
 //- Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
-
-let empty_2 = [];
-
-empty_2[3] = 11;
-empty_2[0] = 'Max';
-empty_2[4] = true;
-empty_2[1] = 'table';
-empty_2[2] = 946;
-empty_2[9] = 111;
-empty_2[5] = 'Alina';
-empty_2[8] = false;
-empty_2[6] = 'TV';
-empty_2[7] = 1865;
-
-for (let l = 0; l < empty_2.length; l++) {
-    console.log(empty_2[l])
-}
-
+//
+//let empty_2 = [];
+//
+//empty_2[3] = 11;
+//empty_2[0] = 'Max';
+//empty_2[4] = true;
+//empty_2[1] = 'table';
+//empty_2[2] = 946;
+//empty_2[9] = 111;
+//empty_2[5] = 'Alina';
+//empty_2[8] = false;
+//empty_2[6] = 'TV';
+//empty_2[7] = 1865;
+//
+//for (let l = 0; l < empty_2.length; l++) {
+//    console.log(empty_2[l])
+//}
+//
 //- Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//
+//for (let i = 0; i < 10; i++) {
+//    console.log(i);
+//    document.write(i)
+//}
+//
+////- Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+//
+//for (let k = 0; k < 100; k++) {
+//    console.log(k);
+//    document.write(`<div>${k}</div>`)
+//}
+//
+//- Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+//
+//for (let l = 0; l < 200; l=l+2) {
+//    console.log(l);
+//    document.write(`<ul><li>${l}</li></ul>`)
+//}
+//
+//- Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
 
 
