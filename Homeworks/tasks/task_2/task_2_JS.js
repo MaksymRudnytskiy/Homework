@@ -173,6 +173,20 @@
 //
 //- Відтворити роботу годинника, відрахувавши  2 години  (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
 //
+for (let hour = 0; hour < 24; hour++) {
 
+    for (let min = 0; min < 60; min++) {
 
+        for (let sec = 0; sec < 60; sec++) {
 
+            console.log(`${hour}:${min}:${sec}`);
+            document.write(`<div>${hour}:${min}:${sec}</div>`);
+
+            if (hour === 1 && min ===1 && sec === 23) {
+                hour = 24;
+                min = 60;
+                break;
+            }
+        }
+    }
+}
