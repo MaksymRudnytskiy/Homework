@@ -122,7 +122,6 @@ let users = [{
 //
 //for (let i = 0; i < users.length; i++) {
 //    let userDiv = document.createElement('div');
-//
 //    userDiv.innerHTML = `name: ${users[i].name} <br>
 //     age: ${users[i].age} <br>
 //     status: ${users[i].status} <br>
@@ -135,10 +134,17 @@ let users = [{
 
 for (let i = 0; i < users.length; i++) {
     let userDiv = document.createElement('div');
-
     userDiv.innerHTML = `name: ${users[i].name} <br>
      age: ${users[i].age} <br>
-     status: ${users[i].status} <br>
-     address: city: ${users[i].address.city}, country: ${users[i].address.country}, street: ${users[i].address.street}, House Number: ${users[i].address.houseNumber}`
+     status: ${users[i].status}`
     document.body.appendChild(userDiv)
 }
+
+for (let k = 0; k < users.length; k++) {
+    let addressDiv = document.createElement('div');
+    addressDiv.innerHTML = `address: city: ${users[k].address.city}, country: ${users[k].address.country}, street: ${users[k].address.street}, House Number: ${users[k].address.houseNumber}`
+    document.body.appendChild(addressDiv)
+}
+
+
+
