@@ -119,15 +119,26 @@ let users = [{
 
 //2) За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement.
 //    Вставити цей блок на сторінку
-
-for (let i = 0; i < users.length; i++) {
-    let userDiv = document.createElement('div');
-    userDiv.innerHTML = `name: ${users[i].name}, age: ${users[i].age}, status: ${users[i].status}}`
-    document.body.appendChild(userDiv)
-}
-
+//
+//for (let i = 0; i < users.length; i++) {
+//    let userDiv = document.createElement('div');
+//
+//    userDiv.innerHTML = `name: ${users[i].name} <br>
+//     age: ${users[i].age} <br>
+//     status: ${users[i].status} <br>
+//     address: city: ${users[i].address.city}, country: ${users[i].address.country}, street: ${users[i].address.street}, House Number: ${users[i].address.houseNumber}`
+//    document.body.appendChild(userDiv)
+//}
+//
 //3) За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement.
 //    Блок з адресою зробити окремим блоком, з блоками для кожної властивості
 
+for (let i = 0; i < users.length; i++) {
+    let userDiv = document.createElement('div');
 
-
+    userDiv.innerHTML = `name: ${users[i].name} <br>
+     age: ${users[i].age} <br>
+     status: ${users[i].status} <br>
+     address: city: ${users[i].address.city}, country: ${users[i].address.country}, street: ${users[i].address.street}, House Number: ${users[i].address.houseNumber}`
+    document.body.appendChild(userDiv)
+}
