@@ -7,14 +7,15 @@
 //    В кожного компютера має бути метод включання.
 
 class Pc {
-    constructor(ram, cpu, name) {
+    constructor( ram, cpu, name ) {
         this.ram = ram;
         this.cpu = 9700;
         this.name = name
     }
+
     activate() {
         let pcOn = confirm('Turn on the PC?');
-        if (pcOn === true){
+        if (pcOn === true) {
             console.log('Activated')
         } else if (pcOn === false) {
             alert('Not active')
@@ -22,7 +23,7 @@ class Pc {
     }
 }
 
-let newPc = new Pc('HyperX',null, 'Asus');
+let newPc = new Pc('HyperX', null, 'Asus');
 
 newPc.activate()
 
@@ -35,14 +36,14 @@ console.log(newPc)
 //    У нього зявляється нова змінна роботи батареї. Ця змінна визначається як потужність / (дюйми * оперативку)
 
 class Laptop extends Pc {
-    constructor(ram, cpu, name, monitorInches) {
+    constructor( ram, cpu, name, monitorInches ) {
         super(ram, cpu, name);
         this.monitorInches = monitorInches;
     }
+
     battery() {
         let power = this.ram * this.cpu;
         console.log(power)
-
     }
 }
 
@@ -56,6 +57,31 @@ console.log(newLaptop)
 //Від ноутбука потрібно зробити ультрабук.
 //    Він має нову змінну ваги.
 //    При включенні ультрабуку має видаватися помилка, якшо вага більша за 2кг та батарея тримаж менше ніж 4 години.
+
+class UltraLaptop extends Laptop {
+    constructor( ram, cpu, name, monitorInches) {
+        super(ram, cpu, name, monitorInches);
+    }
+
+    weightError() {
+        let error = prompt("'What's the laptop weight?'")
+        if (error <= 2) {
+            alert('The battery will last more than 4 Hours')
+        } else if (error > 2) {
+            alert('The battery will not last more than 4 Hours')
+        } else {
+            alert('What??')
+        }
+    }
+}
+
+let newUltraLaptop = new UltraLaptop(32, null, 'Alien2',16);
+
+newUltraLaptop.weightError()
+
+console.log(newUltraLaptop)
+
+
 //===
 //Від базвого класу потрібно створити базовий ПК.
 //    В нього має бути новий метод запуску ігор.
