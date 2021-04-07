@@ -6,10 +6,10 @@
 //Назва.
 //    В кожного компютера має бути метод включання.
 
-class pc {
+class Pc {
     constructor(ram, cpu, name) {
         this.ram = ram;
-        this.cpu = cpu;
+        this.cpu = 9700;
         this.name = name
     }
     activate() {
@@ -22,7 +22,7 @@ class pc {
     }
 }
 
-let newPc = new pc('HyperX',9700, 'Asus');
+let newPc = new Pc('HyperX',null, 'Asus');
 
 newPc.activate()
 
@@ -34,9 +34,23 @@ console.log(newPc)
 //
 //    У нього зявляється нова змінна роботи батареї. Ця змінна визначається як потужність / (дюйми * оперативку)
 
+class Laptop extends Pc {
+    constructor(ram, cpu, name, monitorInches) {
+        super(ram, cpu, name);
+        this.monitorInches = monitorInches;
+    }
+    battery() {
+        let power = this.ram * this.cpu;
+        console.log(power)
 
+    }
+}
 
+let newLaptop = new Laptop(16, null, 'Alien', 23.6)
 
+newLaptop.battery()
+
+console.log(newLaptop)
 
 //===
 //Від ноутбука потрібно зробити ультрабук.
