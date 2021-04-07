@@ -25,38 +25,64 @@
 //arrFunction(arr);
 //
 //3) створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
-
-function returnmin(a,b,c) {
-    let min;
-    if (a <= b && a <= c) min=a;
-    if (b <= a && b <= c) min=b;
-    if (c <= a && c <= b) min=c;
-    return min;
-}
-let min = returnmin(5,6,7);
-console.log(min);
-
-
-//4) створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
-
-function returnmax(a,b,c) {
-    let max;
-    if (a >= b && a >= c) max=a;
-    if (b >= a && b >= c) max=b;
-    if (c >= a && c >= b) max=c;
-    return max;
-}
-let max = returnmax(5,6,7);
-console.log(max);
-
+//
+//function returnmin(a,b,c) {
+//    let min;
+//    if (a <= b && a <= c) min=a;
+//    if (b <= a && b <= c) min=b;
+//    if (c <= a && c <= b) min=c;
+//    return min;
+//}
+//let min = returnmin(5,6,7);
+//console.log(min);
+//
+//
+////4) створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+//
+//function returnmax(a,b,c) {
+//    let max;
+//    if (a >= b && a >= c) max=a;
+//    if (b >= a && b >= c) max=b;
+//    if (c >= a && c >= b) max=c;
+//    return max;
+//}
+//let max = returnmax(5,6,7);
+//console.log(max);
+//
 //5) створити функцію яка повертає найбільше число з масиву
-
-
-
+//
+//function returnmax(a,b,c) {
+//    let max;
+//    if (a >= b && a >= c) max=a;
+//    if (b >= a && b >= c) max=b;
+//    if (c >= a && c >= b) max=c;
+//    return max;
+//}
+//let max = returnmax(5,6,7);
+//
+//const arr = []
+//
+//const maxReturn = arr.push(max)
+//
+//console.log(arr);
+//
 //6) створити функцію яка повертає найменьше число з масиву
-
-
-
+//
+//function returnmin(a,b,c) {
+//    let min;
+//    if (a <= b && a <= c) min=a;
+//    if (b <= a && b <= c) min=b;
+//    if (c <= a && c <= b) min=c;
+//    return min;
+//}
+//let min = returnmin(5,6,7);
+//
+//const arr2 = []
+//
+//const minReturn = arr2.push(min)
+//
+//console.log(arr2);
+//
 //7) створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його.
 
 
