@@ -42,12 +42,12 @@ class Laptop extends Pc {
     }
 
     battery() {
-        let power = this.ram * this.cpu;
+        let power = this.cpu / (this.ram * this.monitorInches);
         console.log(power)
     }
 }
 
-let newLaptop = new Laptop(16, null, 'Alien', 23.6)
+let newLaptop = new Laptop(4, null, 'Alien', 23.6)
 
 newLaptop.battery()
 
@@ -75,7 +75,7 @@ class UltraLaptop extends Laptop {
     }
 }
 
-let newUltraLaptop = new UltraLaptop(32, null, 'Alien2',16);
+let newUltraLaptop = new UltraLaptop(8, null, 'Alien2',16);
 
 newUltraLaptop.weightError()
 
@@ -87,6 +87,35 @@ console.log(newUltraLaptop)
 //    В нього має бути новий метод запуску ігор.
 //    Кількість FPS визначається як потужність / опервтивку.
 //    Example: `You are playing *GAME_NAME* with *FPS_COUNT* FSP`
+
+class GamingPc extends Pc {
+    constructor(ram, cpu, name, game) {
+        super(ram, cpu, name);
+        this.game = game;
+        this.fps = this.cpu / this.ram
+    }
+    launchGame(){
+        let launcher = confirm('Start the GAME?')
+        if (launcher === true){
+            document.write(`<div><h1>Bomb Has Been Planted</h1></div>`)
+        } else {
+            document.write(`<div><h1>Reloading</h1></div>`)
+        }
+    }
+    activation(){
+        alert(`You are playing ${this.game} with ${this.fps} FSP`)
+    }
+}
+
+let newGamingPc = new GamingPc(16, 14000, 'Ultra', 'Counter-Strike')
+
+newGamingPc.launchGame()
+newGamingPc.activation()
+
+console.log(newGamingPc)
+
+
+
 //
 //Компютер можна апгрейдити.
 //    Потужність процесора можна збільшувати максимум на 10%. Зменшувати її не можна.
