@@ -148,5 +148,21 @@ newUpdatedPc.addRAM()
 //Якшо потужність процесора менша ніж 500. І оперативка менша за 8 потрібно ивдати помилку,
 //    що на цьому відрі ігри не запускаються.
 
+class UpdatedGamingPc extends Pc {
+    constructor( ram, cpu, name, game ) {
+        super(ram, cpu, name);
+        this.game = game
+        this.fps = (this.cpu / this.ram) * 2
+    }
 
+    startGame() {
+        let bustCUP = this.cpu + (this.cpu * 0.1 / 100)
+        if (bustCUP < 500 + this.ram < 8){
+            alert('The game will not launch')
+        }
+    }
+}
 
+let newUpdatedGamingPc = new UpdatedGamingPc(4, null, 'GamingPc', 'Heroes III')
+
+newUpdatedGamingPc.startGame()
