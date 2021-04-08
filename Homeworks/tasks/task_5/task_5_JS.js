@@ -121,6 +121,26 @@ console.log(newGamingPc)
 //    Потужність процесора можна збільшувати максимум на 10%. Зменшувати її не можна.
 //    Оперативку можна збільшити лише в 2 рази. Зменшувати її не можна.
 //    Для зміни характеритик мають бути свої методи. Мняти змінну "в лоб" заборонено.
+
+class UpdatedPc extends Pc {
+    constructor(ram, cpu, name) {
+        super(ram, cpu, name);
+    }
+    addCPU(){
+        let newCPU = this.cpu + (this.cpu / 10)
+        console.log('New CPU ', newCPU)
+    }
+    addRAM(){
+        let newRAM = this.ram * 2
+        console.log('New RAM ', newRAM)
+    }
+}
+
+let newUpdatedPc = new UpdatedPc(4, null, 'Macros')
+
+newUpdatedPc.addCPU()
+newUpdatedPc.addRAM()
+
 //===
 //Від базового ПК необхідно зробити ігнорий ПК.
 //    Кількість ФПС має бути рівно в 2 рази більший ніж в звичайного ПК.
