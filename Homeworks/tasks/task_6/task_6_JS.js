@@ -42,15 +42,18 @@ let numbers = [1, 5, 12, 36, 4, 98, 114, 73, 9, 0, 867, 300, 66, 123, 543, 823, 
 //})
 
 //f) За допомогою map збільшити кожен елемент в масиві в три рази.
-
+//
+//let mapNum = numbers.map(value => {
+//    return  value * 3
+//})
+//console.log(mapNum)
 
 //    g) Порахувати загальну суму всіх елментів у масиві (reduce)
-
-
-
-
-
-
+//
+//let reduceNum = numbers.reduce((previousValue, currentValue) => {
+//    return previousValue + currentValue
+//})
+//console.log(reduceNum)
 
 
 
@@ -76,6 +79,13 @@ let array = ['Max', 'cars', 'Computer', 'Alex', 'Yuriy', 'bottle', 'display', 'k
 //})
 
 //c) Отримати в новому масиві тільки ті слова, довжина яких більша за 4 букви (filter)
+//
+//let filterLength = array.filter(value => {
+//    return value.length > 4
+//})
+//console.log(filterLength)
+
+//d) Змінити кожне слово в масиві додавши на початок 'Sam says *ваше слово*'
 
 
 
@@ -83,7 +93,9 @@ let array = ['Max', 'cars', 'Computer', 'Alex', 'Yuriy', 'bottle', 'display', 'k
 
 
 
-console.log(strSort)
+
+
+
 
 //3) Все робити тільки за допомогою методів масивів!
 //    Дано масив :
@@ -107,8 +119,21 @@ console.log(strSort)
 //d) відсортувати його за індентифікатором
 //e) Всі хто одружений мають попасти у новий масив та отрмати квартиру (reduce)
 
+const users = [
+    {name: 'vasya', age: 31, isMarried: false},
+    {name: 'petya', age: 30, isMarried: true},
+    {name: 'kolya', age: 29, isMarried: true},
+    {name: 'olya', age: 28, isMarried: false},
+    {name: 'max', age: 30, isMarried: true},
+    {name: 'anya', age: 31, isMarried: false},
+    {name: 'oleg', age: 28, isMarried: false},
+    {name: 'andrey', age: 29, isMarried: true},
+    {name: 'masha', age: 30, isMarried: true},
+    {name: 'olya', age: 31, isMarried: false},
+    {name: 'max', age: 31, isMarried: true}
+];
 
-
+//a) відсортувати його за  віком (зростання , а потім окремо спадання)
 
 
 
