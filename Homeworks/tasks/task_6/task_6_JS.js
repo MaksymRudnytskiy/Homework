@@ -131,27 +131,63 @@ const users = [
 ];
 
 //a) відсортувати його за  віком (зростання , а потім окремо спадання)
-
-
+//
+//let objSort = users.sort((a, b) => {
+//    return a.age-b.age
+//})
+//console.log(objSort)
+//
+//let objSortRevers = users.sort((a, b) => {
+//    if ( a.age < b.age){
+//        return 1
+//    } else { return -1}
+//})
+//console.log(objSortRevers)
 
 //b) відсортувати його за кількістю знаків в імені  (зростання , а потім окремо спадання)
-
-
+//
+//let objSort = users.sort((a, b) => {
+//    return a.name.length-b.name.length
+//})
+//console.log(objSort)
+//
+//let objSortRevers = users.sort((a, b) => {
+//    if ( a.name.length < b.name.length){
+//        return 1
+//    } else { return -1}
+//})
+//console.log(objSortRevers)
 
 //c) пройтись по ньому та додати кожному юзеру поле id - яке характеризує унікальний індентифікатор (По якому принципу його створювати - ваше рішення),
 //та зберегти це в новий масив (первинний масив залишиться без змін)
 
-
+let idUsers = users.map((value, index) => {
+    return {
+        id: index + 1,
+        ...value
+    }
+})
+console.log(idUsers)
+console.log(users)
 
 //d) відсортувати його за індентифікатором
 
-
+let sortIdUsers = idUsers.sort((a, b) => {
+    return a.id - b.id
+})
+console.log(sortIdUsers)
 
 //e) Всі хто одружений мають попасти у новий масив та отрмати квартиру (reduce)
 
+let newReduceArr = idUsers.reduce((acc, value) => {
+    if (value.isMarried === true) {
+        value.appartment = true;
+        acc.push(value)
+    }
+    return acc
+}, [])
 
-
-
+console.log(newReduceArr)
 
 
 
