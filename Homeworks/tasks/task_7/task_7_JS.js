@@ -55,31 +55,37 @@ const comments = [
     {title: 'com5', body: 'lorem5'},
 ]
 
-const ulComments = document.getElementById('comment')
+let ulComments = document.getElementById('comment')
 
 comments.forEach(( value ) => {
-    const list = document.createElement("li");
+    let list = document.createElement("li");
     list.innerHTML = value.title;
     ulComments.appendChild(list);
 
-
-    const liButton = document.createElement("button");
+    let liButton = document.createElement("button")
     liButton.innerText = 'See comments'
     ulComments.appendChild(liButton)
 
+    let buttonFunction = document.createElement('onclick')
+    buttonFunction.onclick = ev => toggleMenu2()
+    liButton.appendChild(buttonFunction)
 
-    const div = document.createElement('div')
+    let div = document.createElement('div')
     div.innerHTML = value.body
     ulComments.appendChild(div)
 
-function toggleMenu2() {
-        if (list.style.display === "block") {
-            list.style.display = "none";
+    function toggleMenu2() {
+        let menuBox = document.getElementById('comment');
+        if (menuBox.style.display == "block") {
+            menuBox.style.display = "none";
         } else {
-            list.style.display = "block";
+            menuBox.style.display = "block";
         }
     }
+
 })
+
+
 
 console.log(ulComments)
 
